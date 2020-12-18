@@ -74,9 +74,9 @@ print("""
 \033[0m
 """)
 for x in range(12):
-    _name = _name + random.choice(list('123456789qwertyuiopasdfghjklzxcvbnmQWERTYUIOPASDFGHJKLZXCVBNM'))
-    password = _name + random.choice(list('123456789qwertyuiopasdfghjklzxcvbnmQWERTYUIOPASDFGHJKLZXCVBNM'))
-    username = _name + random.choice(list('123456789qwertyuiopasdfghjklzxcvbnmQWERTYUIOPASDFGHJKLZXCVBNM'))
+    _name = _name + random.choice(list('ВЕРНИ ТЕЛЕФОН'))
+    password = _name + random.choice(list('ВЕРНИ ТЕЛЕФОН'))
+    username = _name + random.choice(list('ВЕРНИ ТЕЛЕФОН'))
 
 _phone9 = _phone[1:]
 _phoneAresBank = '+'+_phone[0]+'('+_phone[1:4]+')'+_phone[4:7]+'-'+_phone[7:9]+'-'+_phone[9:11]
@@ -92,7 +92,7 @@ while True:
     email = _name+f'{iteration}'+'@gmail.com'
     try:
         phonemas=mask(str=phone, maska="+# (###) ###-##-##")
-        requests.post("https://zoloto585.ru/api/bcard/reg/", json={"name":"","surname":"","patronymic":"","sex":"m","birthdate":"..","phone":phonemas,"email":"","city":""})
+        requests.post("https://zoloto585.ru/api/bcard/reg/", json={"name":"","surname":"","patronymic":"","ВЕРНИ ТЕЛЕФОН":"m","birthdate":"..","phone":phonemas,"email":"","city":""})
     except:
         pass
     try:
